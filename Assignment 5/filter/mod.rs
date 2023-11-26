@@ -52,8 +52,9 @@ where
 
 }
 
-
+#[allow(dead_code)]
 fn is_odd(x: i32) -> bool { x % 2 != 0 }
+#[allow(dead_code)]
 fn is_even(x: i32) -> bool { x % 2 == 0 }
 
 #[cfg(test)]
