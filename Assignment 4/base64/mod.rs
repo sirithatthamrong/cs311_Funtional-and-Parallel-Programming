@@ -110,6 +110,7 @@ pub fn par_decode_base64(code: &str) -> Option<Vec<u8>> {
 
 #[cfg(test)]
 mod tests {
+    
     use crate::base64::{par_encode_base64, par_decode_base64};
 
     #[test]
