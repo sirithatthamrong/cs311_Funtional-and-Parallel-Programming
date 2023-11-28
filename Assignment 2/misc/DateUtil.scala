@@ -68,7 +68,6 @@ object DateUtil extends App {
 //  println(whatMonth(60,2022) == 3)
 //  println(whatMonth(125,2023) == 5)
 
-
   def oldest(dates: List[Date]): Option[Date] = {
     if (dates.isEmpty) None
     else Some(dates.minBy((d,m,y) => (y,m,d)))
