@@ -66,5 +66,5 @@ pub fn par_closest_distance(points: &[(i32, i32)]) -> i64 {
     sorted_vec.par_sort_unstable_by_key(|elem| elem.0);
 
     let (min_distance, _) = cp_helper(&sorted_vec);
-    (min_distance as f64).sqrt() as i64
+    min_distance
 }
